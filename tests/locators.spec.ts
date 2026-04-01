@@ -5,6 +5,7 @@ test(`locators`, async({page})=>{
     // await page.mouse.wheel(0, 500);  // scroll down
     // await page.getByRole(`textbox`, {name:'Username'}).fill('mohith');
     // // for getbyrole we need to use accessiblity in dom but reaming all we use dom itself
+
     // await page.mouse.wheel(0, 600);  // scroll down
     // await page.getByLabel('Email Address:').fill("mohith@gmail.com");
 
@@ -28,7 +29,6 @@ test(`locators`, async({page})=>{
     // await page.waitForTimeout(3000);
 
 
-
     // css selectors
     await page.locator(`#email`).fill("mohith@gmail.com");
     await page.waitForTimeout(3000); //id
@@ -36,5 +36,4 @@ test(`locators`, async({page})=>{
     await page.locator(`.home-link`).click();
     await page.waitForTimeout(3000); //class name
     
-
 });

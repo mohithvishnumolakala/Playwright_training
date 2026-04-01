@@ -8,7 +8,6 @@ import { chromium, test } from "@playwright/test";
 //     // //insted of above three commands we directly enter into page by passing into the async funtion as below 
 //     await page.goto('https://www.google.com');
 //     await page.waitForTimeout(5000);
-
 // });
 
 

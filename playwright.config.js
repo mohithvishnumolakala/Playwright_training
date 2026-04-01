@@ -17,6 +17,8 @@ export default defineConfig({
     // Show browser UI
     headless: false,
 
+    // screenshot:`off`,
+
     // Collect trace only on first retry
     trace: 'on-first-retry',
   },
