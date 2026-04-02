@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices  } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
@@ -9,6 +9,7 @@ export default defineConfig({
 
   // Always run with only ONE worker
   workers: 1,
+  // retries:1, //this helps us to retry failed testcase
 
   // HTML report
   reporter: 'html',
@@ -18,25 +19,68 @@ export default defineConfig({
     headless: false,
 
     // screenshot:`off`,
+    // video:'on',
 
-    // Collect trace only on first retry
-    trace: 'on-first-retry',
+    //enable fo rscreenshots and record to work
+    // trace: 'on',
+
   },
 
-  projects: [
+
+projects: [
+    // ✅ CHROME DESKTOP (MAXIMIZED)
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: 'Chrome Desktop',
+      use: {
+        browserName: 'chromium',
+        viewport: null,
+        launchOptions: {
+          args: ['--start-maximized']
+        }
+      }
     },
 
-    // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
+    // ✅ CHROME MOBILE VIEW
+  //   {
+  //     name: 'Chrome Mobile',
+  //     use: {
+  //       browserName: 'chromium',
+  //       ...devices['Pixel 5']
+  //     }
+  //   },
 
-    // {
-    //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
-  ],
+  //   // ✅ EDGE DESKTOP
+  //   {
+  //     name: 'Edge Desktop',
+  //     use: {
+  //       browserName: 'chromium',
+  //       channel: 'msedge',
+  //       viewport: null,
+  //       launchOptions: {
+  //         args: ['--start-maximized']
+  //       }
+  //     }
+  //   },
+    
+  // //   {
+  // //     name: 'firefox',
+  // //     use: { ...devices['Desktop Firefox'] },
+  // //   },
+
+  // //   {
+  // //     name: 'webkit',
+  // //     use: { ...devices['Desktop Safari'] },
+  // //   },
+
+
+  //   // ✅ EDGE MOBILE VIEW
+  //   {
+  //     name: 'Edge Mobile',
+  //     use: {
+  //       browserName: 'chromium',
+  //       channel: 'msedge',
+  //       ...devices['Pixel 5']
+  //     }
+  //   }
+  ]
 });

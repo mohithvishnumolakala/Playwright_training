@@ -16,6 +16,5 @@ test(`screenshots`, async({page})=>{
 
     await page.screenshot({path: 'screenshots/userpage_full_screenshot.png', fullPage: true});
     // screenshot for full page
-
-
+    
 });
