@@ -16,10 +16,10 @@ test('automation day_1', async({page})=>{
   await page.getByRole('button',{name:'Add to cart'}).click();
   await page.locator('#nav-cart').click();
   await page.locator('a[href="/gp/cart/view.html?ref_=nav_cart"]').click();
+  await page.waitForTimeout(2000);
   await page.screenshot({path: 'screenshots/cartpage_amazon_screenshot.png'});
   await page.getByRole('button',{name:"Proceed to Buy Buy Amazon items"}).click();
   await page.locator('#ap_email_login').fill('done');
-
   await page.waitForTimeout(2000);
   
 });
