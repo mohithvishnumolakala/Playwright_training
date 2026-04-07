@@ -29,16 +29,16 @@ export default defineConfig({
 
 projects: [
     // ✅ CHROME DESKTOP (MAXIMIZED)
-    {
-      name: 'Chrome Desktop',
-      use: {
-        browserName: 'chromium',
-        viewport: null,
-        launchOptions: {
-          args: ['--start-maximized']
-        }
-      }
-    },
+    // {
+    //   name: 'Chrome Desktop',
+    //   use: {
+    //     browserName: 'chromium',
+    //     viewport: null,
+    //     launchOptions: {
+    //       args: ['--start-maximized']
+    //     }
+    //   }
+    // },
 
     // ✅ CHROME MOBILE VIEW
   //   {
@@ -49,19 +49,19 @@ projects: [
   //     }
   //   },
 
-  //   // ✅ EDGE DESKTOP
-  //   {
-  //     name: 'Edge Desktop',
-  //     use: {
-  //       browserName: 'chromium',
-  //       channel: 'msedge',
-  //       viewport: null,
-  //       launchOptions: {
-  //         args: ['--start-maximized']
-  //       }
-  //     }
-  //   },
-    
+     // ✅ EDGE DESKTOP
+  {
+    name: 'Edge Desktop',
+    use: {
+      browserName: 'chromium',
+      channel: 'msedge',
+      viewport: null,
+      launchOptions: {
+        args: ['--start-maximized']
+      }
+    }
+  },
+  
   // //   {
   // //     name: 'firefox',
   // //     use: { ...devices['Desktop Firefox'] },
