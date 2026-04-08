@@ -26,7 +26,8 @@ test(`day2_1` , async({page})=>{
     await page.locator('.oxd-userdropdown-img').click();
     await page.getByRole('menuitem' ,{name:'Logout'}).click();
     await expect (page).toHaveURL("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
- 
+
+
 });
 
 
