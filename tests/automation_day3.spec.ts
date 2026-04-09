@@ -21,5 +21,5 @@ await page.locator('.button-2.product-box-add-to-cart-button').nth(1).click();
     await page.getByText('Apply').nth(0).click();
     await page.locator('#termsofservice').click();
     await page.locator('#checkout').click();
-    await page.getByRole('button', {name: 'Checkout as Guest'}).click();
+    await page.getByRole('button', {name: 'Checkout as Guest'}).click();   //sometimes not working beacuse of ui changes, so we can use below code to click on checkout as guest button
 });
