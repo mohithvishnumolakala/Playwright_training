@@ -41,15 +41,15 @@ projects: [
     },
 
     // ✅ CHROME MOBILE VIEW
-  //   {
-  //     name: 'Chrome Mobile',
-  //     use: {
-  //       browserName: 'chromium',
-  //       ...devices['Pixel 5']
-  //     }
-  //   },
+    // {
+    //   name: 'Chrome Mobile',
+    //   use: {
+    //     browserName: 'chromium',
+    //     ...devices['Pixel 5']
+    //   }
+    // },
 
-     // ✅ EDGE DESKTOP
+    //  ✅ EDGE DESKTOP
   // {
   //   name: 'Edge Desktop',
   //   use: {
@@ -62,25 +62,25 @@ projects: [
   //   }
   // },
   
-  // //   {
-  // //     name: 'firefox',
-  // //     use: { ...devices['Desktop Firefox'] },
-  // //   },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
-  // //   {
-  // //     name: 'webkit',
-  // //     use: { ...devices['Desktop Safari'] },
-  // //   },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
 
 
-  //   // ✅ EDGE MOBILE VIEW
-  //   {
-  //     name: 'Edge Mobile',
-  //     use: {
-  //       browserName: 'chromium',
-  //       channel: 'msedge',
-  //       ...devices['Pixel 5']
-  //     }
-  //   }
+    // ✅ EDGE MOBILE VIEW
+    // {
+    //   name: 'Edge Mobile',
+    //   use: {
+    //     browserName: 'chromium',
+    //     channel: 'msedge',
+    //     ...devices['Pixel 5']
+    //   }
+    // }
   ]
 });
